@@ -1,5 +1,5 @@
 # Git
-.git 
+.git
 .gitignore
 
 # Docker
@@ -7,7 +7,7 @@
 
 # Python
 app/__pycache__/
-app/*/__pychache__/
+app/*/__pycache__/
 app/*/*/__pycache__/
 app/*/*/*/__pycache__/
 .env/
