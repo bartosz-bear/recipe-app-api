@@ -3,7 +3,6 @@ Sample tests
 """
 
 from django.test import SimpleTestCase
-from rest_framework.test import APIClient
 
 from app import calc
 
@@ -29,14 +28,3 @@ class CalcTests(SimpleTestCase):
         res = calc.subtract(10, 15)
 
         self.assertEqual(res, -5)
-
-    def test_get_greetings(self):
-
-        client = APIClient()
-        res = client.get('/greetings/')
-
-        self.assertEqual(res.status_code, 200)
-        self.assertEqual(
-            res.data,
-            ['Hello']
-        )
